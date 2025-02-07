@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-contact {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #ffffff;
+    color: white;
+}
+
+.hero-contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-contact-content h1 {
+    font-size: 36px;
+}
+
+.hero-contact-content p {
+    font-size: 18px;
+}
+
+/* Social Media Section */
+.social-media {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Leadership Contact Section */
+.leadership-contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ecf0f1;
+}
+
+.contact-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-box {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 250px;
+    color: white;
+    text-align: center;
+}
+
+.contact-box h3 {
+    font-size: 22px;
+}
+
+.contact-box p {
+    font-size: 18px;
+}
+
+.contact-box a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+.footer-black-bar {
+    background-color: #1c1c1c;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* Centers the social media links */
+}
+
+.social-icon {
+    color: white !important;  /* Ensure links are always white */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    color: lightblue !important;  /* Change color to blue when hovering */
+    text-decoration: underline;
+}
+
+/* Email Links Styling */
+p4 {
+    font-weight: bold;
+}
