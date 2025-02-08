@@ -1,0 +1,246 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
+
+/* Recipe Section */
+.recipes {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.recipe-item {
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.recipe-item button {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    font-size: 1.2rem;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipe-item button:focus {
+    outline: none;
+}
+
+.recipe-item button span {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.recipe-item .dropdown-content {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.recipe-item.active .dropdown-content {
+    display: block;
+}
+
+.recipe-item .dropdown-content h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.recipe-item .dropdown-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+/* Default styling for dropdown content */
+.dropdown-content {
+    display: none;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Show the dropdown content when it's active */
+.dropdown-content.active {
+    display: block;
+}
+
+/* Style for the button */
+.dropdown-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hover effect on the button */
+.dropdown-btn:hover {
+    background-color: #444;
+}
+
+/* Style for the arrow */
+.arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate the arrow when dropdown is active */
+.dropdown-content.active ~ .dropdown-btn .arrow {
+    transform: rotate(180deg);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recipe-item {
+    width: 45%;
+    position: relative;
+}
+
+.dropdown-btn {
+    width: 100%;
+    background-color: #c78c60;
+    color: white;
+    padding: 12px;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.dropdown-btn:hover {
+    background-color: #a36a48;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.recipe-item.active .dropdown-content {
+    display: block;
+}
+
+.arrow {
+    float: right;
+}

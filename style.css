@@ -42,15 +42,15 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Hero Section */
-.hero-contact {
+/* Hero Section for Menu */
+.hero {
     text-align: center;
-    padding: 80px 20px;
-    background-color: #ffffff;
+    padding: 100px 20px;
+    background-color: #1c1c1c;
     color: white;
 }
 
-.hero-contact-content {
+.hero-content {
     max-width: 600px;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.7);
@@ -58,81 +58,51 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-.hero-contact-content h1 {
+.hero-content h1 {
     font-size: 36px;
 }
 
-.hero-contact-content p {
+.hero-content p {
     font-size: 18px;
 }
 
-/* Social Media Section */
-.social-media {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.social-links a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
-}
-
-.social-icon {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-/* Leadership Contact Section */
-.leadership-contact {
-    text-align: center;
+/* Menu Section */
+.menu {
     padding: 50px 20px;
-    background-color: #ecf0f1;
+    background-color: #f4f4f4;
 }
 
-.contact-boxes {
+.menu-category {
+    margin-bottom: 40px;
+}
+
+.menu-category h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.menu-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-category li {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
 }
 
-.contact-box {
-    background: #1c1c1c;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 250px;
-    color: white;
-    text-align: center;
+.menu-category li:last-child {
+    border-bottom: none;
 }
 
-.contact-box h3 {
-    font-size: 22px;
-}
-
-.contact-box p {
-    font-size: 18px;
-}
-
-.contact-box a {
-    color: #ffffff;
-    text-decoration: none;
+.menu-category span {
     font-weight: bold;
-}
-
-.contact-box a:hover {
-    text-decoration: underline;
+    color: #e67e22;
+    margin-left: 20px; /* Added space between item and price */
 }
 
 /* Footer */
@@ -163,9 +133,4 @@ footer {
 .social-link:hover {
     color: lightblue;
     text-decoration: underline;
-}
-
-/* Email Links Styling */
-p4 {
-    font-weight: bold;
 }
