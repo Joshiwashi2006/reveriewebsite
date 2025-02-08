@@ -1,3 +1,24 @@
+/* Optionally, you can style the dropdown button */
+.dropdown-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.open .arrow {
+    transform: rotate(180deg);
+}
+
+
+
+
 /* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
@@ -176,11 +197,18 @@ footer {
     background-color: #444;
 }
 
-/* Style for the arrow */
+/* Arrow default position (pointing left) */
 .arrow {
-    font-size: 18px;
-    transition: transform 0.3s ease;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(0deg); /* Start pointing left */
 }
+
+/* When dropdown is opened, arrow points downward */
+.arrow.rotated {
+    transform: rotate(90deg); /* Rotate to point down */
+}
+
 
 /* Rotate the arrow when dropdown is active */
 .dropdown-content.active ~ .dropdown-btn .arrow {
