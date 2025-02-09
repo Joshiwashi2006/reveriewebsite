@@ -1,21 +1,18 @@
-/* Ensure the body and html take up the full height */
+
 html, body {
     height: 100%;
     margin: 0;
 }
 
-/* Use flexbox for the main layout */
 body {
     display: flex;
     flex-direction: column;
 }
 
-/* Ensure the main content takes up available space */
 main {
     flex: 1;
 }
 
-/* Footer remains at the bottom */
 footer {
     text-align: center;
     padding: 20px;
@@ -23,10 +20,6 @@ footer {
     color: white;
 }
 
-
-/* jobs.css */
-
-/* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -70,7 +63,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Hero Section */
 .jobs-hero {
     text-align: center;
     padding: 100px 20px;
@@ -94,7 +86,6 @@ nav ul li a:hover {
     font-size: 18px;
 }
 
-/* Job Listings Section */
 .job-listings {
     padding: 50px 20px;
     text-align: center;
@@ -134,7 +125,6 @@ nav ul li a:hover {
     margin-top: 10px;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -146,7 +136,6 @@ p2 {
     font-weight: bold;
 }
 
-/* Footer Social Links */
 .social-links {
     margin-top: 10px;
 }
