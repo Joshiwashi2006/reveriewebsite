@@ -1,21 +1,17 @@
-/* Ensure the body and html take up the full height */
 html, body {
     height: 100%;
     margin: 0;
 }
 
-/* Use flexbox for the main layout */
 body {
     display: flex;
     flex-direction: column;
 }
 
-/* Ensure the main content takes up available space */
 main {
     flex: 1;
 }
 
-/* Footer remains at the bottom */
 footer {
     text-align: center;
     padding: 20px;
@@ -23,8 +19,6 @@ footer {
     color: white;
 }
 
-
-/* General Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -68,7 +62,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Hero Section */
 .hero-contact {
     text-align: center;
     padding: 80px 20px;
@@ -92,7 +85,6 @@ nav ul li a:hover {
     font-size: 18px;
 }
 
-/* Social Media Section */
 .social-media {
     text-align: center;
     padding: 40px 20px;
@@ -120,7 +112,6 @@ nav ul li a:hover {
     gap: 8px;
 }
 
-/* Leadership Contact Section */
 .leadership-contact {
     text-align: center;
     padding: 50px 20px;
@@ -161,15 +152,12 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background-color: #1c1c1c;
-    color: white;
-}
-
-/* Footer Social Links */
+    color: 
+    
 .social-links {
     margin-top: 10px;
 }
