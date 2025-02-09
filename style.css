@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -42,7 +42,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Hero Section for Menu */
 .hero {
     text-align: center;
     padding: 100px 20px;
@@ -66,7 +65,6 @@ nav ul li a:hover {
     font-size: 18px;
 }
 
-/* Menu Section */
 .menu {
     padding: 50px 20px;
     background-color: #f4f4f4;
@@ -105,7 +103,6 @@ nav ul li a:hover {
     margin-left: 20px; /* Added space between item and price */
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -113,7 +110,6 @@ footer {
     color: white;
 }
 
-/* Footer Social Links */
 .social-links {
     margin-top: 10px;
 }
