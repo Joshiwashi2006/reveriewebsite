@@ -1,3 +1,29 @@
+/* Ensure the body and html take up the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Use flexbox for the main layout */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure the main content takes up available space */
+main {
+    flex: 1;
+}
+
+/* Footer remains at the bottom */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+
 /* jobs.css */
 
 /* General Styles */
