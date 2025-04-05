@@ -1,184 +1,185 @@
-
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
+/* General Styles */
 body {
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    flex: 1;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1c1c1c;
-    color: white;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     color: #333;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #1c1c1c;
+/* Header */
+.top-bar {
+    background-color: white; /* Set the top bar background to white */
     color: white;
+    text-align: center;
+    padding: 10px 0;
 }
 
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
+/* Navigation container */
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center;
+    background-color: transparent; /* Keep the background transparent */
+    padding: 10px 20px;
+    position: fixed; /* Keeps the navbar at the top when scrolling */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensures it's above other content */
+}
+
+/* Logo styling */
+.logo img {
+    width: auto;
+    margin: 0 27px;
+    height: 108px;
+}
+
+/* Navigation links container */
+nav {
+    display: flex;
+    justify-content: center; /* Centers the nav links */
+    flex-grow: 1; /* Ensures the nav takes up remaining space */
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    list-style-type: none;
     display: flex;
+    gap: 15px;
 }
 
 nav ul li {
-    margin-left: 20px;
+    display: inline;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: white;
     font-weight: bold;
+    font-size: 1.3125em;
+    padding: 8px 12px;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #003865;
+    color: white;
+    border-radius: 5px;
 }
 
-.hero, .about-hero {
+/* Hero Section */
+.hero {
+    background: url('images/home_screen.png') no-repeat center center/cover;
+    color: white;
     text-align: center;
     padding: 100px 20px;
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: white;
 }
 
-.about-hero {
-    background-color: #ffffff; 
-}
-
-.hero-content, .about-hero-content {
+.hero-text {
     max-width: 600px;
-    margin: 0 auto;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
+    margin: auto;
 }
 
-.hero-content h1, .about-hero-content h1 {
-    font-size: 36px;
-}
-
-.hero-content p, .about-hero-content p {
-    font-size: 18px;
-}
-
-.btn {
+.cta-button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
+    background-color: #f58220;
     color: white;
+    padding: 10px 20px;
     text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
-    margin-top: 10px;
+    transition: 0.3s;
 }
 
-.about-details {
-    display: flex;
-    justify-content: space-between;
+.cta-button:hover {
+    background-color: #d96b1c;
+}
+
+/* News & Events */
+.news, .events {
     padding: 50px 20px;
-    background-color: #f4f4f4;
-}
-
-.about-text {
-    width: 60%;
-}
-
-.about-image {
-    width: 35%;
-}
-
-.about-image img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.leadership {
     text-align: center;
-    padding: 50px 20px;
-    background-color: #f4f4f4;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.team {
+.news-container, .events-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.member {
-    background: #1c1c1c;
+article {
+    background: #f5f5f5;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 250px;
+    max-width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer-content {
+    background-color: #003865;
     color: white;
     text-align: center;
+    padding: 20px;
 }
 
-.member img {
-    width: 100px;
-    height: 100px;
+/* SLT Section */
+.slt h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #003865;
+    margin-bottom: 40px;
+}
+
+/* SLT Grid */
+.slt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px; 
+    justify-items: center; /* Centering grid items */
+    align-items: center; /* Aligns items vertically */
+    padding: 10px;
+    margin: 0 auto; /* Ensures the grid is centered within its container */
+    max-width: 1200px; /* Optional: Max width for the grid */
+}
+
+
+/* SLT Member Box */
+.slt-member {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px; /* Reduced padding */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    max-width: 250px; /* Further reduced max-width */
+}
+
+
+.slt-member:hover {
+    transform: translateY(-10px);
+}
+
+.slt-member img {
+    max-width: 150px;
+    height: auto;
     border-radius: 50%;
-    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
-.member-info {
+.slt-member h3 {
+    font-size: 22px;
+    color: #333;
     margin-bottom: 10px;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1c1c1c;
-    color: white;
+.slt-member p {
+    font-size: 16px;
+    color: #666;
 }
-
-.social-links {
-    margin-top: 10px;
-}
-
-.social-link {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    transition: color 0.3s ease-in-out;
-}
-
-.social-link i {
-    margin-right: 8px;
-}
-
-.social-link:hover {
-    color: lightblue;
-    text-decoration: underline;
-}
-

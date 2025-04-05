@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+.transparent-header {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Navigation container */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo styling */
+.logo img {
+    width: auto;
+    margin: 0 27px;
+    height: 108px;
+}
+
+/* Navigation links container */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3125em;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #003865;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/home_screen.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px; /* Reduce padding for a better fit */
+    background-size: cover;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* SLT Section */
+.slt h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #003865;
+    margin-bottom: 40px;
+}
+
+/* SLT Grid */
+.slt-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Fixed three columns layout */
+    gap: 40px;
+    justify-items: center;
+    padding: 20px;
+}
+
+/* SLT Member Box */
+.slt-member {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    transition: transform 0.3s ease;
+    max-width: 300px;
+}
+
+.slt-member:hover {
+    transform: translateY(-10px);
+}
+
+.slt-member img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.slt-member h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.slt-member p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #003865;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
